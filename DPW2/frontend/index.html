@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" defer src="/main.js"></script>
+  <link rel="stylesheet" href="/style.css" />
+  <title>App de Juros</title>
+</head>
+
+<body>
+  <form>
+    <label for="juros">
+      Juros:
+      <input type="number" id="juros" name="juros" value="1.3" step=".1" min="0" />
+    </label>
+
+    <label for="valorInicial">
+      Valor Inicial:
+      <input type="number" id="valorInicial" name="valorInicial" value="1000" min="0" />
+    </label>
+
+    <label for="depositoMensal">
+      Depósito Mensal:
+      <input type="number" id="depositoMensal" name="depositoMensal" value="100" min="0" />
+    </label>
+
+    <label for="meses">
+      Meses:
+      <input type="number" id="meses" name="meses" value="18" min="0" />
+    </label>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div id="display"></div>
+</body>
+
+</html>

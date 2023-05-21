@@ -1,0 +1,102 @@
+:root {
+  --main-color: #18223a;
+  --light-color: #2d374d;
+  --dark-color: #0f1727;
+
+  --highlight-color: #48a2d5;
+  --dark-highlight-color: #1e5f8a;
+
+  --input-color: #212e42;
+
+  --text-color: #fff;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+
+  background-color: var(--light-color);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form label input {
+  margin-left: 0.3rem;
+}
+
+form input {
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--input-color);
+}
+
+form button {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  font-weight: bold;
+  transition: background-color 300ms ease-in-out;
+}
+
+form button:hover {
+
+  background-color: var(--dark-highlight-color);
+}
+
+form button:active {
+  background-color: var(--highlight-color);
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--light-color);
+}
+
+table td,
+table th {
+  border: 1px solid var(--main-color);
+  padding: 0.5rem;
+}
+
+table th {
+  background-color: var(--highlight-color);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--dark-color);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--light-color);
+}
